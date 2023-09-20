@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocham kotki 123</title>
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/006/873/332/original/cat-emoji-square-emoticon-smile-cute-illustration-free-vector.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            color: white;
+        }
+        body {
+            background-color: #000120;
+        }
+        header {
+            background-color: #ffffff75;
+        }
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: #ffffff50;
+        }
+        section {
+            width: 100%;
+            height: 757px;
+            background-color: #ffffff25;
+        }
+        img:nth-of-type(1) {
+            animation: rainbow 5s infinite linear;
+        }
+        img:nth-of-type(2) {
+            height: 120px;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-170%) scaleX(-1);
+        }
+        img:nth-of-type(3) {
+            height: 120px;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-82%);
+        }
+        img:nth-of-type(4) {
+            height: 120px;
+            position: fixed;
+            left: 50%;
+            transform: translateX(20%);
+        }
+        section img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: rainbow 1s infinite linear;
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+        h2 {
+            position: absolute;
+        }
+        h2:nth-of-type(1) {
+            left: 50px;
+            transform: translateY(50%);
+        }
+        h2:nth-of-type(2) {
+            left: 50%;
+            transform: translateX(-70%) translateY(50%);
+        }
+        h2:nth-of-type(3) {
+            left: 100%;
+            transform: translateX(calc(-100% - 50px)) translateY(50%);
+        }
+        span {
+            position: fixed;
+            transform: translate(-50%,130%);
+        }
+        span:nth-of-type(1) {
+            left: 12.5%;
+        }
+        span:nth-of-type(2) {
+            left: 37.5%;
+        }
+        span:nth-of-type(3) {
+            left: 62.5%;
+        }
+        span:nth-of-type(4) {
+            left: 87.5%;
+        }
+        @keyframes rainbow {
+            from {
+                filter: hue-rotate(0deg);
+            }
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./kochamkotki.png">
+        <img src="https://img1.picmix.com/output/stamp/normal/3/5/6/2/2442653_c58d0.gif">
+        <img src="https://m.media-amazon.com/images/I/61yoxKi1PaL.png" onclick="document.getElementById('nyan').play()">
+        <img src="https://img1.picmix.com/output/stamp/normal/3/5/6/2/2442653_c58d0.gif">
+        <audio id="nyan" loop>
+            <source src="nyan.mp3">
+        </audio>
+    </header>
+    <nav>
+       <h2><a href="https://www.koty.pl/rasy">Poznaj rasy</a></h2>
+       <h2><a href="https://www.national-geographic.pl/artykul/ciekawostki-o-kotach-10-zadziwiajacych-faktow">Ciekawostki o kotach</a></h2>
+       <h2><a href="https://pl.wikipedia.org/wiki/Kot_domowy#Rasy_kota_domowego">Wikipedia</a></h2>
+    </nav>
+    <section>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/744c5396-75da-4277-b823-439ce693ce15/dej5u2h-41afb229-f02e-4aeb-b426-d0785ec94401.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc0NGM1Mzk2LTc1ZGEtNDI3Ny1iODIzLTQzOWNlNjkzY2UxNVwvZGVqNXUyaC00MWFmYjIyOS1mMDJlLTRhZWItYjQyNi1kMDc4NWVjOTQ0MDEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XUaaSBr3YNSWHuPk8SjzB7Bxo8-PwpWKiAMgVTb5CO0">
+    </section>
+    <footer>
+        <h5>
+            <span>Autor: Julia Ożga</span>
+            <span>Copyright 2023 Julek Ożg</span>
+            <span><a href="https://www.koty.pl/rasy?">Rasy</a> <a href="https://www.national-geographic.pl/artykul/ciekawostki-o-kotach-10-zadziwiajacych-faktow">Ciekaowski</a> <a href="https://pl.wikipedia.org/wiki/Kot_domowy#Rasy_kota_domowego">Wikipedia</a></span>
+            <span id="clock">xx.xx.xx</span>
+        </h5>
+    </footer>
+    <script>
+        let date = new Date()
+        document.getElementById('clock').innerText = date.getDate() + "." + (Number(date.getMonth()) + 1) + "." + date.getFullYear();
+    </script>
+</body>
+</html>
